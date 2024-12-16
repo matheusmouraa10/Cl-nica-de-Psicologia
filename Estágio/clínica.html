@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clínica de Saúde - Serviços de saúde especializados com confiança e profissionalismo.">
+    <title>Clínica de Saúde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Clínica de Saúde</h1>
+        <p>Confiança e profissionalismo ao seu alcance.</p>
+    </header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#services">Serviços</a>
+        <a href="#partners">Convênios</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <section id="home">
+        <h2>Bem-vindo à nossa Clínica</h2>
+        <img src="banner.jpg" alt="Imagem de saúde e bem-estar" class="responsive-image">
+        <p>Nossa missão é oferecer o melhor cuidado para sua saúde.</p>
+    </section>
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Com anos de experiência, nossa equipe está pronta para cuidar de você.</p>
+        <p>Conheça nossa equipe de especialistas dedicados à sua saúde.</p>
+    </section>
+    <section id="services">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Clínica Geral</li>
+            <li>Pediatria</li>
+            <li>Dermatologia</li>
+            <!-- Adicionar outros serviços -->
+        </ul>
+    </section>
+    <section id="partners">
+        <h2>Convênios e Parcerias</h2>
+        <p>Trabalhamos com os principais convênios de saúde para melhor atendê-lo.</p>
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco:</p>
+        <p>Telefone: (XX) XXXXX-XXXX</p>
+        <p>Email: contato@clinicadesaude.com</p>
+        <p>Localização: Rua Exemplo, 123, Cidade</p>
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="E-mail" required>
+                <input type="tel" placeholder="Telefone" required>
+                <textarea placeholder="Mensagem" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <p><a href="https://wa.me/5511999999999" target="_blank">Contato via WhatsApp</a></p>
+        <div id="mapa"></div>
+    </section>
+    <footer>
+        <p>© 2024 Clínica de Saúde. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        // Integrar Google Maps
+        function initMap() {
+            const location = { lat: -23.55052, lng: -46.633308 }; // Exemplo: São Paulo
+            const map = new google.maps.Map(document.getElementById('mapa'), {
+                zoom: 15,
+                center: location
+            });
+            new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
+`;
+
+// Renderiza o HTML no console para exportar
+console.log(siteHTML);

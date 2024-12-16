@@ -1,0 +1,50 @@
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background: #f4f4f4;
+    padding: 10px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+.form-container {
+    max-width: 500px;
+    margin: auto;
+}
+.form-container input, .form-container textarea, .form-container button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
